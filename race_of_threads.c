@@ -1,4 +1,5 @@
 
+
 #include <pthread.h>
 #include <stdio.h>
 
@@ -21,6 +22,7 @@ int thread_two(){
 void main(){
 	pthread_t Thread_one;
 	pthread_create(&Thread_one, NULL, thread_one, NULL);
-  pthread_t Thread_two;
-  pthread_create(&Thread_two, NULL, thread_two, NULL);
+	pthread_t Thread_two;
+	pthread_create(&Thread_two, NULL, thread_two, NULL);
+	printf(i);
 }
