@@ -1,5 +1,6 @@
 
 
+
 #include <pthread.h>
 #include <stdio.h>
 
@@ -24,5 +25,7 @@ void main(){
 	pthread_create(&Thread_one, NULL, thread_one, NULL);
 	pthread_t Thread_two;
 	pthread_create(&Thread_two, NULL, thread_two, NULL);
+	pthread_join(Thread_one, NULL);
+	pthread_join(Thread_two, NULL);
 	printf(i);
 }
